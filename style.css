@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.barDiscound{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(209, 137, 28, 1);
+
+}
+
+h1{
+    font-weight: normal;
+    font-size: 2rem;
+    padding: 20px 20px;
+    color: white;
+    background-color: rgba(0, 102, 159, 1);
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.cards{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 80px;
+    margin-bottom: 50px;
+    
+}
+
+
+.heart{
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    position: absolute;
+}
+
+.perfil{
+    position: absolute;
+    border-radius: 50%;
+    top: 30%;
+    left: 33%;
+    width: 100px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.portada{
+    border-radius: 20px 20px 0 0 ;
+}
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+p{
+    padding: 0 10px;
+}
+
+.more{
+    position:absolute;
+    top: 50%;
+    right: 10px;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.card{
+    width: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px;
+    border-radius: 20px 20px 0 0 ;
+    box-shadow: 5px 5px 15px gray;
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+button{
+    border: none;
+    display: inline;
+    align-self: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgba(0, 102, 159, 1);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    color: white;
+    background-color: rgba(0, 102, 159, 1);
+}
+footer span{
+    justify-self: center;
+    margin-left: auto;
+}
+footer img {
+    width: 90px;
+    margin-left: auto;
+    justify-self: right;
+}
+
+@media(max-width: 375px){
+
+    .cards{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil{
+        position: absolute;
+        border-radius: 50%;
+        top: 30%;
+        left: 33%;
+        width: 100px;
+        box-shadow: 0px 5px 5px gray;
+    }
+
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    footer span{
+        font-size: .8rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer img {
+        width: 90px;
+        margin-left: 0;
+        justify-self: center;
+    }
+}
